@@ -1,0 +1,66 @@
+h1 {
+    background-color: paleturquoise;
+    text-align: center;
+    width: 100%;
+    font-weight: 100;
+    font-size: 40px;
+    line-height: 20px;
+
+    text-decoration: wavy underline;
+    font-family: monospace;
+    text-transform: uppercase;
+}
+
+.but {
+    background-color: #A68A64;
+
+}
+
+/* pseudo class options active, visited*/
+.but:hover {
+    background-color: #bca27d
+}
+
+.title {
+    font-size: 12px;
+
+}
+
+table p {
+    font-family: Helvetica;
+    font-size: 24px;
+
+
+}
+
+p {
+    line-height: 2.5;
+    letter-spacing: 1px;
+    font-size: 24px;
+    font-family: monospace;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+/*A4AC86, 656D4A, 414833, B6AD90, 7F4F24, 582F0E, 936639, A68A64*/
+td {
+    width: 50%;
+    /* border-width: 2px;
+    border-color: black;
+    border-style: solid; */
+
+
+}
+
+.right {
+    padding-left: 40px;
+
+}
+
+.left {
+    padding-left: 1000px;
+}
