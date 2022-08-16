@@ -1,3 +1,24 @@
+.index {
+    text-align: center;
+    width: 100%;
+}
+
+.index td {
+    width: 30%;
+
+}
+
+#bigimage {
+    height: 400px;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    background-image: url("Photos/marc-schulte-n5qzgURyBEI-unsplash.jpg");
+    background-size: cover;
+    background-position: bottom;
+    color: white;
+}
+
 h1 {
     background-color: paleturquoise;
     text-align: center;
@@ -13,7 +34,27 @@ h1 {
 
 .but {
     background-color: #A68A64;
+    text-align: center;
+    width: 100px;
+    height: 40px;
 
+}
+
+.button_class {
+    text-align: left;
+}
+
+.paragraph {
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: center;
+    width: 80%;
+    display: inline-block;
+}
+
+.testing {
+    display: inline-block;
+    margin-bottom: 50px;
 }
 
 /* pseudo class options active, visited*/
@@ -22,45 +63,75 @@ h1 {
 }
 
 .title {
-    font-size: 12px;
+    font-size: 20px;
+    font-family: Helvetica;
 
+}
+
+table {
+    width: 100%;
 }
 
 table p {
     font-family: Helvetica;
     font-size: 24px;
+    text-align: center;
+
+
 
 
 }
 
 p {
-    line-height: 2.5;
     letter-spacing: 1px;
     font-size: 24px;
     font-family: monospace;
 }
 
-img {
-    width: 300px;
+.donate {
+    width: 500px;
     height: 300px;
     object-fit: cover;
+
+}
+
+.donate_table td {
+    padding: 0;
+    text-align: center;
+    width: auto;
+}
+
+img {
+    width: 60%;
+    height: 300px;
+    object-fit: cover;
+    text-align: center;
+
+}
+
+td {
+    width: 50%;
 }
 
 /*A4AC86, 656D4A, 414833, B6AD90, 7F4F24, 582F0E, 936639, A68A64*/
-td {
+.page_tables td {
     width: 50%;
-    /* border-width: 2px;
-    border-color: black;
-    border-style: solid; */
+    text-align: center;
+    vertical-align: top;
+    line-height: 1.5;
+
 
 
 }
 
+
+
+/*
 .right {
-    padding-left: 40px;
+    padding-right: 20%;
 
 }
 
 .left {
-    padding-left: 1000px;
-}
+    padding-left: 20%;
+}*/
