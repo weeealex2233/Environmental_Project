@@ -9,27 +9,57 @@
 }
 
 #bigimage {
-    height: 400px;
+    height: 800px;
     width: 80%;
     text-align: center;
     margin: 0 auto;
-    background-image: url("Photos/marc-schulte-n5qzgURyBEI-unsplash.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("Photos/marc-schulte-n5qzgURyBEI-unsplash.jpg");
     background-size: cover;
     background-position: bottom;
     color: white;
 }
 
+#bigimagediv {
+    padding-top: 200px;
+}
+
+#container {
+    background-color: green;
+}
+
+#container-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+    width: 50%;
+    height: 50px;
+    margin: auto;
+    align-items: center;
+
+}
+
+#container a {
+
+    text-decoration: none;
+    color: white;
+}
+
 h1 {
-    background-color: paleturquoise;
     text-align: center;
     width: 100%;
     font-weight: 100;
     font-size: 40px;
     line-height: 20px;
-
-    text-decoration: wavy underline;
+    margin: 0;
+    padding: 0.67em, 0.67em;
+    background-color: lightgreen;
     font-family: monospace;
     text-transform: uppercase;
+}
+
+#donatebutton {
+    background-color: lightblue;
 }
 
 .but {
@@ -37,7 +67,7 @@ h1 {
     text-align: center;
     width: 100px;
     height: 40px;
-
+    margin-bottom: 50px;
 }
 
 .button_class {
@@ -48,14 +78,12 @@ h1 {
     font-size: 12px;
     line-height: 1.5;
     text-align: center;
-    width: 80%;
+    width: 60%;
+    margin: auto;
+    padding-bottom: 15px;
     display: inline-block;
 }
 
-.testing {
-    display: inline-block;
-    margin-bottom: 50px;
-}
 
 /* pseudo class options active, visited*/
 .but:hover {
@@ -65,6 +93,10 @@ h1 {
 .title {
     font-size: 20px;
     font-family: Helvetica;
+    width: 60%;
+    margin: auto;
+    padding-top: 65px;
+    padding-bottom: 25px;
 
 }
 
@@ -103,7 +135,7 @@ p {
 
 img {
     width: 60%;
-    height: 300px;
+    height: 400px;
     object-fit: cover;
     text-align: center;
 
