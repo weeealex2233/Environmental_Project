@@ -1,3 +1,7 @@
+* {
+    font-family: sans-serif;
+}
+
 .index {
     text-align: center;
     width: 100%;
@@ -17,6 +21,7 @@
     background-size: cover;
     background-position: bottom;
     color: white;
+    font-family: 'Roboto', sans-serif;
 }
 
 #bigimagediv {
@@ -32,7 +37,7 @@
     flex-direction: row;
     justify-content: space-evenly;
     list-style: none;
-    width: 50%;
+    width: 60%;
     height: 50px;
     margin: auto;
     align-items: center;
@@ -54,8 +59,19 @@ h1 {
     margin: 0;
     padding: 0.67em, 0.67em;
     background-color: lightgreen;
-    font-family: monospace;
-    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    ;
+}
+
+h2 {
+    text-align: center;
+    width: 100%;
+    font-size: 30px;
+    line-height: 20px;
+    margin: 0;
+    padding: 0.67em, 0.67em;
+    background-color: lightgreen;
+    font-family: 'Roboto', sans-serif;
 }
 
 #donatebutton {
@@ -81,6 +97,7 @@ h1 {
     width: 60%;
     margin: auto;
     padding-bottom: 15px;
+    font-family: 'Roboto', sans-serif;
     display: inline-block;
 }
 
