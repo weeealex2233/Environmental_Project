@@ -48,6 +48,7 @@ h3 {
     background-color: green;
     position: sticky;
     top: 60px;
+    display: inline-block;
 }
 
 .container-items {
@@ -223,5 +224,6 @@ media query
 
     .desktop {
         display: inline-block;
+        width: 100%;
     }
 }
