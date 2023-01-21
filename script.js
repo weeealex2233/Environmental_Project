@@ -1,4 +1,4 @@
-console.log("hello world");
+console.log(even_number([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
 
 // null means its not defined but intentionally
 // undefined is unintentional
@@ -8,9 +8,9 @@ console.log("hello world");
 STRING METHODS
 
 let name = "Timmy"
-name[0];
+name[0]; name.charAt(0);
 name.slice(0,3);
-name.charAt("m");
+name.indexOf("m");
 
 
 COMPARISONS
@@ -38,3 +38,52 @@ age_allowed(a)*/
 // create a function that accepts age as a parameter and if the age is >= 18, alert the end user ("welcome to my page")
 // otherwise alert the end user ("you're too young to enter")
 // using prompt, collect the age to pass as an argument into your function
+
+function even_number(nums) {
+    even_nums = 0;
+    i = 0;
+    while (nums.length = i - 1) {
+        if (nums[i] % 2 == 1) {
+            i += 1;
+        }
+        else {
+            i += 1;
+            even_nums += 1;
+        }
+
+    }
+}
+
+// Create a function that accepts a list of numbers as the parameter and returns the number of even numbers found in the list //
+
+
+function formdata() {
+    let electric = document.getElementById("electric").value;
+    let gas = document.getElementById("gas").value;
+    let oil = document.getElementById("oil").value;
+    let mileage = document.getElementById("mileage").value;
+    let less = document.getElementById("flightsless").value;
+    let more = document.getElementById("flightsmore").value;
+    let newspaper = document.getElementById("newspaper").value;
+    let tin = document.getElementById("tin").value;
+
+    let sum = (electric * 105) + (gas * 105) + (oil * 113) + (mileage * 0.79) + (less * 1100) + (more * 4400);
+    if (newspaper == "off") {
+        sum += 184
+    }
+    if (tin == "off") {
+        sum += 166
+    }
+    document.writeln("Your Carbon Footprint is " + sum + "<br>");
+    if (sum < 15999) {
+        document.writeln("Your Carbon Footprint is Ideal")
+    }
+    else if (sum < 22000) {
+        document.writeln("Your Carbon Footprint is Average")
+    }
+    else {
+        document.writeln("Your Carbon Footprint is above average")
+    }
+
+}
+

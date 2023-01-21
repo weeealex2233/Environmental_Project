@@ -1,10 +1,11 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Carbon Footprint Calculator</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,7 +13,7 @@
 </head>
 
 <body>
-    <h1>Contact Me</h1>
+    <h1>Carbon Footprint Calculator</h1>
     <div class="container desktop">
         <ul class="container-items">
             <li><a href="index.html">Home</a></li>
@@ -26,6 +27,7 @@
 
             <li><a href="contact.html">Contact Me</a></li>
             <li><a href="donate.html">Donate</a></li>
+
         </ul>
     </div>
     <div class="container tablet">
@@ -37,19 +39,28 @@
             <li><a href="page3.html"><img src="Photos/Icons/people.png"></a>
 
             </li>
-
             <li><a href="calculator.html"><img src="Photos/Icons/carbon-footprint.png" alt=""></a></li>
+
             <li><a href="contact.html"><img src="Photos/Icons/contact-mail.png" alt=""></a></li>
             <li><a href="donate.html"><img src="Photos/Icons/donate.png" alt=""></a></li>
         </ul>
     </div>
-    <div><label for="name">Name: </label><input type="text" id="name"></div>
+    <script src="script.js"></script>
+    <form><br>
 
-    <div><label for="email">Email: </label><input type="text" id="email"></div>
-    <div><label for="message">Message: </label><textarea id="message" rows="30" columns="10"></textarea></div>
-    <div><button>submit</button></div>
-    <footer> <a href="https://github.com/weeealex2233">Design and Build By Alex Yu 2022 &copy;</a>
-    </footer>
+        <p>Enter Your Monthly Electric Bill: <input type="number" id="electric" /></p><br>
+        <p>Enter Your Monthly Gas Bill: <input type="number" id="gas" /></p><br>
+        <p>Enter Your Monthly Oil Bill: <input type="number" id="oil" /></p><br>
+        <p>Enter Your Yearly Mileage on Your Car:<input type="number" id="mileage" /> </p><br>
+        <p>Enter The Number of Flights You've Taken in the Past Year(4 hours or less): <input type="number"
+                id="flightsless" /></p><br>
+        <p>Enter The Number of Flights You've Taken in the Past Year(more than 4 hours): <input type="number"
+                id="flightsmore" /></p><br>
+        <p>Do You Recycle Newspaper: <input type="checkbox" id="newspaper" /></p><br>
+        <p>Do You Recycle Aluminum and Tin: <input type="checkbox" id="tin" /></p><br>
+        <input type="submit" value="Submit" onclick="formdata()" /><br>
+    </form>
+
 </body>
 
 </html>
