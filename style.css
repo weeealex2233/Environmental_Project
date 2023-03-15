@@ -199,7 +199,7 @@ p {
     width: auto;
 }
 
-img {
+.webimg {
     width: 60%;
     height: 400px;
     object-fit: cover;
@@ -224,13 +224,13 @@ td {
 
 .tablet img {
     width: 30%;
-    height: 30%;
+    /*height: 30%;*/
 }
 
 /*
 media query
 */
-@media (max-width:1000px) {
+@media (max-width:5000px) {
     .desktop {
         display: none;
 
@@ -238,7 +238,7 @@ media query
 
     .tablet {
         display: inline-block;
-
+        width: 100%;
     }
 
 }
