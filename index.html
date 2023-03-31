@@ -7,7 +7,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <script>function websiteVisits(response) {
+      document.querySelector("#visits").textContent = response.value;
 
+    }</script>
+  <script async src="https://api.countapi.xyz/hit/EnvironmentalBlog.com/visits?callback=websiteVisits"></script>
 
 </head>
 
@@ -51,7 +55,11 @@
           id="bigimagebutton" onclick="window.location.href='page1.html'">Learn
           More</button>
       </div>
+      <div id="count">
+        <p style="vertical-align: middle;">This site has been visited: <span id="visits"></span></p>
+      </div>
     </div>
+
 
 
 

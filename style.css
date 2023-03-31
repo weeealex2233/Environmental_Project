@@ -51,6 +51,11 @@ body {
 
 }
 
+#count p {
+    font-size: 18px;
+    margin: 42px;
+}
+
 #bigimagetext {
     font-size: 18px;
     margin: 42px;
