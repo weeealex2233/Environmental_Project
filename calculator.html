@@ -48,22 +48,21 @@
     <script src="script.js"></script>
     <form id="calculator-form"><br>
 
-        <p class="calculator-p">Your Monthly Electric Bill($)</p><br>
-        <input type="number" id="electric" class="calculator-input" placeholder="2500" /><br>
-        <p class="calculator-p">Your Monthly Gas Bill($)</p> <br>
-        <input type="number" id="gas" class="calculator-input" placeholder="1000" /><br>
-        <p class="calculator-p">Your Monthly Oil Bill($) </p><br>
-        <input type="number" id="oil" class="calculator-input" placeholder="2000" /><br>
-        <p class="calculator-p">Your Yearly Mileage on Your Car(miles)</p><br>
-        <input type="number" id="mileage" class="calculator-input" placeholder="10000" /> <br>
-        <p class="calculator-p">The Number of Flights You've Taken in the Past Year(4 hours or less): </p><br>
-        <input type="number" id="flightsless" class="calculator-input" placeholder="12" /><br>
+        <p class="calculator-p">Your Monthly Electric Bill</p>
+        <p class="values">$ <input type="number" id="electric" class="calculator-input" placeholder="2500" /></p>
+        <p class="calculator-p">Your Monthly Gas Bill</p>
+        <p class="values">$ <input type="number" id="gas" class="calculator-input" placeholder="1000" /></p>
+        <p class="calculator-p">Your Monthly Oil Bill</p>
+        <p class="values">$ <input type="number" id="oil" class="calculator-input" placeholder="2000" /></p>
+        <p class="calculator-p">Your Yearly Mileage on Your Car</p>
+        <p class="values"><input type="number" id="mileage" class="calculator-input" placeholder="10000" /> miles</p>
+        <p class="calculator-p">The Number of Flights You've Taken in the Past Year(4 hours or less): </p>
+        <p class="values"><input type="number" id="flightsless" class="calculator-input" placeholder="12" /> flights</p>
         <p class="calculator-p">The Number of Flights You've Taken in the Past Year(more than 4 hours):</p>
-        <br>
-        <input type="number" id="flightsmore" class="calculator-input" placeholder="6" /><br>
+        <p class="values"><input type="number" id="flightsmore" class="calculator-input" placeholder="6" /> flights</p>
         <p class="calculator-p">Do You Recycle Newspaper <input type="checkbox" id="newspaper" class="check" /></p><br>
         <p class="calculator-p">Do You Recycle Aluminum and Tin <input type="checkbox" id="tin" class="check" /></p><br>
-        <input type="submit" value="Submit" onclick="formdata()" class="calculator-submit" /><br>
+        <input type="submit" value="Submit" onclick="formdata()" class="calculator-submit" />
     </form>
 
 </body>

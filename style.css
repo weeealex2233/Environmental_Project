@@ -94,18 +94,41 @@ h3 {
 .calculator-input {
     margin-top: 0;
     margin-bottom: 24px;
-    width: 50%;
+    width: 40%;
     height: 24px;
+    margin-left: 2px;
+}
+
+.values {
+    margin: 0px;
+    font-size: 22px;
+    margin-left: 5px;
+}
+
+#calculator-form {
+    background-color: beige;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-style: solid;
+    border-color: black;
+    border-radius: 20px;
+}
+
+.calculator-submit {
+    width: 64px;
+    margin: 5px;
 }
 
 .calculator-p {
     margin: 0;
     font-size: 18px;
+    margin-left: 5px;
 }
 
-form {
-    margin: 5%;
-}
+
 
 .desktop li {
     padding: 15.5px;
@@ -115,7 +138,7 @@ form {
     width: 18px;
     height: 18px;
     margin: 0px;
-    padding-top: 2px;
+    margin-left: 5px;
 }
 
 .tablet a {
