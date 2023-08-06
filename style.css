@@ -97,6 +97,7 @@ h3 {
     width: 40%;
     height: 24px;
     margin-left: 2px;
+    background-color: rgb(245, 245, 245);
 }
 
 .values {
@@ -105,8 +106,12 @@ h3 {
     margin-left: 5px;
 }
 
-#calculator-form {
+#calc-body {
     background-color: beige;
+}
+
+#calculator-form {
+    background-color: white;
     width: 50%;
     margin-left: 25%;
     margin-right: 25%;
@@ -114,12 +119,14 @@ h3 {
     margin-bottom: 5%;
     border-style: solid;
     border-color: black;
-    border-radius: 20px;
+    border-radius: 12px;
 }
 
 .calculator-submit {
     width: 64px;
-    margin: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
 }
 
 .calculator-p {

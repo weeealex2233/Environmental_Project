@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body id="calc-body">
     <h1 class="header">Carbon Footprint Calculator</h1>
     <div class="container desktop">
         <ul class="container-items">
@@ -49,20 +49,20 @@
     <form id="calculator-form"><br>
 
         <p class="calculator-p">Your Monthly Electric Bill</p>
-        <p class="values">$ <input type="number" id="electric" class="calculator-input" placeholder="2500" /></p>
+        <input type="number" id="electric" class="calculator-input" placeholder="2500" />
         <p class="calculator-p">Your Monthly Gas Bill</p>
-        <p class="values">$ <input type="number" id="gas" class="calculator-input" placeholder="1000" /></p>
+        <input type="number" id="gas" class="calculator-input" placeholder="1000" />
         <p class="calculator-p">Your Monthly Oil Bill</p>
-        <p class="values">$ <input type="number" id="oil" class="calculator-input" placeholder="2000" /></p>
+        <input type="number" id="oil" class="calculator-input" placeholder="2000" />
         <p class="calculator-p">Your Yearly Mileage on Your Car</p>
-        <p class="values"><input type="number" id="mileage" class="calculator-input" placeholder="10000" /> miles</p>
+        <input type="number" id="mileage" class="calculator-input" placeholder="10000" />
         <p class="calculator-p">The Number of Flights You've Taken in the Past Year(4 hours or less): </p>
-        <p class="values"><input type="number" id="flightsless" class="calculator-input" placeholder="12" /> flights</p>
+        <input type="number" id="flightsless" class="calculator-input" placeholder="12" />
         <p class="calculator-p">The Number of Flights You've Taken in the Past Year(more than 4 hours):</p>
-        <p class="values"><input type="number" id="flightsmore" class="calculator-input" placeholder="6" /> flights</p>
+        <input type="number" id="flightsmore" class="calculator-input" placeholder="6" />
         <p class="calculator-p">Do You Recycle Newspaper <input type="checkbox" id="newspaper" class="check" /></p><br>
         <p class="calculator-p">Do You Recycle Aluminum and Tin <input type="checkbox" id="tin" class="check" /></p><br>
-        <input type="submit" value="Submit" onclick="formdata()" class="calculator-submit" />
+        <div class="calculator-submit"><input type="submit" value="Submit" onclick="formdata()" /></div>
     </form>
 
 </body>
