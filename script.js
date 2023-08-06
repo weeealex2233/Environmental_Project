@@ -57,7 +57,7 @@ function even_number(nums) {
 // Create a function that accepts a list of numbers as the parameter and returns the number of even numbers found in the list //
 
 
-function formdata() {
+function replaceElement() {
     let electric = document.getElementById("electric").value;
     let gas = document.getElementById("gas").value;
     let oil = document.getElementById("oil").value;
@@ -74,16 +74,20 @@ function formdata() {
     if (tin == "off") {
         sum += 166
     }
-    document.writeln("Your Carbon Footprint is " + sum + "<br>");
+    var newElement = document.createElement('h4');
+    h4.setAttribute('style', 'white-space: pre;');
+    newElement.textContent = "Your Carbon Footprint is " + sum;
     if (sum < 15999) {
-        document.writeln("Your Carbon Footprint is Ideal")
+        newElement.textContent += "\r\nYour Carbon Footprint is Ideal"
     }
     else if (sum < 22000) {
-        document.writeln("Your Carbon Footprint is Average")
+        newElement.textContent += "\r\nYour Carbon Footprint is Average"
     }
     else {
-        document.writeln("Your Carbon Footprint is above average")
+        newElement.textContent += "\r\nYour Carbon Footprint is above average"
     }
+    var calculatorform = document.getElementById('calculatorform');
+    calculatorform.replaceWith(newElement);
 
 }
 

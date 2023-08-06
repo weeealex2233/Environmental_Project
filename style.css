@@ -110,7 +110,7 @@ h3 {
     background-color: beige;
 }
 
-#calculator-form {
+#calculatorform {
     background-color: white;
     width: 50%;
     margin-left: 25%;
@@ -120,6 +120,11 @@ h3 {
     border-style: solid;
     border-color: black;
     border-radius: 12px;
+}
+
+h4 {
+    font-size: 24px;
+    text-align: center;
 }
 
 .calculator-submit {
