@@ -46,18 +46,41 @@
     <form id="contactform"><br>
         <p id="top">Contact Me</p>
         <p class="contactp">First Name</label>
-            <input type="text" id="fname" name="firstname" class="contactinput" placeholder="Your name..">
+            <input type="text" id="fname" name="firstname" class="contactinput" placeholder="Your name...">
 
         <p class="contactp">Last Name</label>
-            <input type="text" id="lname" name="lastname" class="contactinput" placeholder="Your last name..">
+            <input type="text" id="lname" name="lastname" class="contactinput" placeholder="Your last name...">
         <p class="contactp">Email</label>
-            <input class="contactinput" type="text" placeholder="Your email..." id="email">
+            <input class="contactinput" id="email" type="text" placeholder="Your email..." id="email">
         <p class="contactp">Subject</label>
-            <textarea id="subject" name="subject" class="contactinput" placeholder="Write something.."
+            <textarea id="subject" name="subject" id="subject" class="contactinput" placeholder="Write something..."
                 style="height:200px"></textarea>
 
-            <input type="submit" value="Submit">
+            <input id="btn" type="submit" value="Submit">
     </form>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script>
+        var btn = document.getElementById("btn");
+        btn.addEventListener("click", function (e) {
+            e.preventDefault()
+            var fname = document.getElementById("fname").value;
+            var lname = document.getElementById("lname").value;
+            var email = document.getElementById("email").value;
+            var subject = document.getElementById("subject").value;
+            var body = "First Name: " + fname + "<br/> Last Name: " + lname + "<br/> Email: " + email + "<br/> Subject: " + subject;
+
+            Email.send({
+                SecureToken: "614d8310-d168-46d3-8452-84e8a2298a9b",
+                To: 'alex06.yu@gmail.com',
+                From: "alex06.yu@gmail.com",
+                Subject: "Conact Me Information",
+                Body: body
+            }).then(
+                message => alert(message)
+            );
+        })
+    </script>
     <footer> <a class="credentials" href="https://github.com/weeealex2233">Design and Build By Alex Yu 2022 &copy;</a>
     </footer>
 </body>
