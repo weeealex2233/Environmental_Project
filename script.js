@@ -39,23 +39,10 @@ age_allowed(a)*/
 // otherwise alert the end user ("you're too young to enter")
 // using prompt, collect the age to pass as an argument into your function
 
-function even_number(nums) {
-    even_nums = 0;
-    i = 0;
-    while (nums.length = i - 1) {
-        if (nums[i] % 2 == 1) {
-            i += 1;
-        }
-        else {
-            i += 1;
-            even_nums += 1;
-        }
+function websiteVisits(response) {
+    document.querySelector("#visits").textContent = response.value;
 
-    }
 }
-
-// Create a function that accepts a list of numbers as the parameter and returns the number of even numbers found in the list //
-
 
 function replaceElement() {
     let electric = document.getElementById("electric").value;
@@ -75,8 +62,8 @@ function replaceElement() {
         sum += 166
     }
     var newElement = document.createElement('h4');
-    h4.setAttribute('style', 'white-space: pre;');
-    newElement.textContent = "Your Carbon Footprint is " + sum;
+    newElement.setAttribute('style', 'white-space: pre;');
+    newElement.textContent = "Your Carbon Footprint is " + sum + "lbs per year";
     if (sum < 15999) {
         newElement.textContent += "\r\nYour Carbon Footprint is Ideal"
     }

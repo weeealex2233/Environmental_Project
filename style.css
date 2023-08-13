@@ -24,7 +24,6 @@ body {
 
 #bigimage {
     height: 800px;
-    width: 90%;
     text-align: center;
     margin: 0 auto;
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("Photos/marc-schulte-n5qzgURyBEI-unsplash.jpg");
@@ -94,10 +93,13 @@ h3 {
 .calculator-input {
     margin-top: 0;
     margin-bottom: 24px;
-    width: 40%;
+    width: 90%;
     height: 24px;
-    margin-left: 2px;
+    margin-left: 5%;
+    margin-right: 24px;
     background-color: rgb(245, 245, 245);
+    border: 2px outset rgb(37, 37, 37);
+    box-shadow: 0px 2px 2px #ddd;
 }
 
 .values {
@@ -106,9 +108,7 @@ h3 {
     margin-left: 5px;
 }
 
-#calc-body {
-    background-color: beige;
-}
+
 
 #calculatorform {
     background-color: white;
@@ -117,27 +117,91 @@ h3 {
     margin-right: 25%;
     margin-top: 5%;
     margin-bottom: 5%;
-    border-style: solid;
-    border-color: black;
     border-radius: 12px;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+        0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    ;
+}
+
+body {
+    background-color: rgb(216, 251, 221);
+}
+
+#contactform {
+    background-color: white;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 12px;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+        0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    ;
+}
+
+.contactp {
+    margin: 0;
+    font-size: 16px;
+    margin-left: 5%;
+    margin-bottom: 4px;
+    line-height: 24px;
+}
+
+.contactinput {
+    margin-top: 0;
+    margin-bottom: 24px;
+    width: 90%;
+    height: 24px;
+    margin-right: 24px;
+    background-color: rgb(245, 245, 245);
+    border: 2px outset rgb(37, 37, 37);
+    box-shadow: 0px 2px 2px #ddd;
 }
 
 h4 {
     font-size: 24px;
     text-align: center;
+    line-height: 48px;
+    border-style: hidden;
+    border-color: black;
 }
 
 .calculator-submit {
-    width: 64px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10px;
+    width: 10%;
+    margin-left: 45%;
+    margin-right: 45%;
+    padding-bottom: 12px;
+
+}
+
+.calculator-submit input {
+    font-size: 18px;
+    background: lightgreen;
+    border-radius: 4px;
+}
+
+#top {
+    font-size: 24px;
+    margin: 12px;
+    margin-top: 0px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#subtop {
+    font-size: 16px;
+    color: grey;
+    margin: 14px;
+    text-align: center;
 }
 
 .calculator-p {
+
     margin: 0;
-    font-size: 18px;
-    margin-left: 5px;
+    font-size: 16px;
+    margin-left: 5%;
+    margin-bottom: 4px;
 }
 
 

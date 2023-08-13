@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body id="contact-body">
     <h1 class="header">Contact Me</h1>
     <div class="container desktop">
         <ul class="container-items">
@@ -43,11 +43,21 @@
             <li><a href="donate.html"><img src="Photos/Icons/donate.png" alt=""></a></li>
         </ul>
     </div>
-    <div><label for="name">Name: </label><input type="text" id="name"></div>
+    <form id="contactform"><br>
+        <p id="top">Contact Me</p>
+        <p class="contactp">First Name</label>
+            <input type="text" id="fname" name="firstname" class="contactinput" placeholder="Your name..">
 
-    <div><label for="email">Email: </label><input type="text" id="email"></div>
-    <div><label for="message">Message: </label><textarea id="message" rows="30" columns="10"></textarea></div>
-    <div><button>submit</button></div>
+        <p class="contactp">Last Name</label>
+            <input type="text" id="lname" name="lastname" class="contactinput" placeholder="Your last name..">
+        <p class="contactp">Email</label>
+            <input class="contactinput" type="text" placeholder="Your email..." id="email">
+        <p class="contactp">Subject</label>
+            <textarea id="subject" name="subject" class="contactinput" placeholder="Write something.."
+                style="height:200px"></textarea>
+
+            <input type="submit" value="Submit">
+    </form>
     <footer> <a class="credentials" href="https://github.com/weeealex2233">Design and Build By Alex Yu 2022 &copy;</a>
     </footer>
 </body>
