@@ -91,12 +91,12 @@ h3 {
 }
 
 .calculator-input {
-    margin-top: 0;
-    margin-bottom: 24px;
     width: 90%;
     height: 24px;
-    margin-left: 5%;
-    margin-right: 24px;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 24px;
+    display: block;
     background-color: rgb(245, 245, 245);
     border: 2px outset rgb(37, 37, 37);
     box-shadow: 0px 2px 2px #ddd;
@@ -143,20 +143,37 @@ body {
 .contactp {
     margin: 0;
     font-size: 16px;
-    margin-left: 10%;
+    margin-left: 5%;
     margin-bottom: 4px;
     line-height: 24px;
 }
 
 .contactinput {
+    margin: auto;
+    display: block;
     margin-top: 0;
     margin-bottom: 24px;
     width: 90%;
     height: 24px;
-    margin-right: 24px;
+
     background-color: rgb(245, 245, 245);
     border: 2px outset rgb(37, 37, 37);
     box-shadow: 0px 2px 2px #ddd;
+
+}
+
+#btn {
+    width: 30%;
+    font-size: 18px;
+    background: lightgreen;
+    border-radius: 4px;
+    margin: auto;
+    display: block;
+
+}
+
+#inputdiv {
+    padding-bottom: 12px;
 }
 
 h4 {
@@ -167,18 +184,18 @@ h4 {
     border-color: black;
 }
 
-.calculator-submit {
-    width: 10%;
-    margin-left: 45%;
-    margin-right: 45%;
+#calculator-submit {
     padding-bottom: 12px;
-
 }
 
-.calculator-submit input {
+
+#calculator-submit input {
+    width: 30%;
     font-size: 18px;
     background: lightgreen;
     border-radius: 4px;
+    margin: auto;
+    display: block;
 }
 
 #top {
