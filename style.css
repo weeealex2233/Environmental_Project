@@ -407,6 +407,11 @@ p {
     opacity: 1;
 }
 
+
+.donate_container:hover .centered {
+    color: transparent;
+}
+
 .donate_container:hover>img {
     opacity: 0.7;
 }
