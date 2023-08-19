@@ -243,7 +243,7 @@ h4 {
 }
 
 .highlighted {
-    background-color: rgb(62, 188, 62);
+    text-decoration: underline;
 }
 
 .container-items a {
@@ -253,9 +253,13 @@ h4 {
 }
 
 .container a {
+    color: white;
+}
+
+.no-underline {
 
     text-decoration: none;
-    color: white;
+
 }
 
 .header {
@@ -271,10 +275,6 @@ h4 {
     top: 0;
 }
 
-
-#donatebutton {
-    background-color: lightblue;
-}
 
 .but {
     background-color: #A68A64;
@@ -341,10 +341,105 @@ p {
 
 }
 
+.donate_container a {
+    color: white;
+}
+
+.donate_container {
+    position: relative;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.donate_container * {
+    box-sizing: border-box;
+    transition: all 0.45s ease;
+}
+
+.donate_container::before,
+.donate_container::after {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: '';
+    transition: all 0.3s ease;
+    z-index: 1;
+    opacity: 0;
+    transform: scaleY(1);
+}
+
+.donate_container img {
+    vertical-align: top;
+    max-width: 100%;
+    backface-visibility: hidden;
+}
+
+.donate_container figcaption {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.1em;
+    opacity: 0;
+    z-index: 2;
+    transition-delay: 0.1s;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding: 12px;
+}
+
+.donate_container:hover::before,
+.donate_container:hover::after {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.donate_container:hover>img {
+    opacity: 0.7;
+}
+
+.donate_container:hover figcaption {
+    opacity: 1;
+}
+
+.donate_container img {
+
+    filter: brightness(50%);
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#topdonate {
+    font-size: 36px;
+    color: black;
+    text-align: center;
+    margin: auto;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
 .donate_table td {
     padding: 0;
     text-align: center;
-    width: auto;
+    width: 30%;
 }
 
 .webimg {
@@ -352,7 +447,6 @@ p {
     height: 400px;
     object-fit: cover;
     text-align: center;
-
 }
 
 td {
