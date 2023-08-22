@@ -1,5 +1,3 @@
-
-
 // null means its not defined but intentionally
 // undefined is unintentional
 // NaN similar to null but the type is number
