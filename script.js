@@ -61,17 +61,19 @@ function replaceElement() {
     }
     var newElement = document.createElement('h4');
     newElement.setAttribute('style', 'white-space: pre;');
-    newElement.textContent = "Your Carbon Footprint is " + sum + "lbs per year";
-    if (sum < 15999) {
+    newElement.textContent = "Your Carbon Footprint is " + sum + "lbs Per Year";
+    if (sum < 26000) {
         newElement.textContent += "\r\nYour Carbon Footprint is Ideal"
     }
-    else if (sum < 22000) {
+    else if (sum <32000) {
         newElement.textContent += "\r\nYour Carbon Footprint is Average"
     }
     else {
-        newElement.textContent += "\r\nYour Carbon Footprint is above average"
+        newElement.textContent += "\r\nYour Carbon Footprint is Above Average"
     }
-    var calculatorform = document.getElementById('calculatorform');
+	newElement.textContent += "\r\nThe Average Person in America has a Carbon Footprint of Around 16 Tons Per Year"
+	newElement.textContent += "\r\nHere are Some Ways You can Cut Down on Your Carbon Footprint";
+    var calculatorform = document.getElementById('calcform');
     calculatorform.replaceWith(newElement);
 
 }
