@@ -447,6 +447,10 @@ p {
     width: 30%;
 }
 
+.donate_table {
+    z-index: 1;
+}
+
 .webimg {
     width: 60%;
     height: 400px;
