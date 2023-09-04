@@ -37,10 +37,7 @@ age_allowed(a)*/
 // otherwise alert the end user ("you're too young to enter")
 // using prompt, collect the age to pass as an argument into your function
 
-function websiteVisits(response) {
-    document.querySelector("#visits").textContent = response.value;
 
-}
 
 function replaceElement() {
     let electric = document.getElementById("electric").value;
@@ -65,14 +62,14 @@ function replaceElement() {
     if (sum < 26000) {
         newElement.textContent += "\r\nYour Carbon Footprint is Ideal"
     }
-    else if (sum <32000) {
+    else if (sum < 32000) {
         newElement.textContent += "\r\nYour Carbon Footprint is Average"
     }
     else {
         newElement.textContent += "\r\nYour Carbon Footprint is Above Average"
     }
-	newElement.textContent += "\r\nThe Average Person in America has a Carbon Footprint of Around 16 Tons Per Year"
-	newElement.textContent += "\r\nHere are Some Ways You can Cut Down on Your Carbon Footprint";
+    newElement.textContent += "\r\nThe Average Person in America has a Carbon Footprint of Around 16 Tons Per Year"
+    newElement.textContent += "\r\nHere are Some Ways You can Cut Down on Your Carbon Footprint";
     var calculatorform = document.getElementById('calcform');
     calculatorform.replaceWith(newElement);
 

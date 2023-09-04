@@ -53,8 +53,9 @@
           More</button>
       </div>
       <div id="count">
-        <p style="vertical-align: middle;">This site has been visited: <span id="visits"></span></p>
+        <p style="vertical-align: middle;">Visits <span id="pagevisits"></span></p>
       </div>
+
     </div>
 
 
@@ -65,6 +66,20 @@
 
 
   </main>
+  <script>
+    const pagevisits = document.getElementById("pagevisits");
+    updateCounter("type=visit")
+    function updateCounter() {
+      fetch("https://weeealex2233.github.io/Environmental_Project/")
+        .then(res => res.json())
+        .the(data => {
+          pagevisits.textContent = data.pagevisits;
+        })
+    }
+    sessionStorage.setItem("visit", "x")
+
+
+  </script>
   <footer>
     <a class="credentials" href="https://github.com/weeealex2233">Design and Build By Alex Yu 2022 &copy;</a>
   </footer>
