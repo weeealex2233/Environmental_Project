@@ -4,6 +4,7 @@
 <head>
   <title>Environmental News</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="index.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
@@ -20,7 +21,7 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="page1.html" class="no-underline">Pollution News</a>
         </li>
-        <li><a href="page2.html" class="no-underline">Environmental Justice</a> </li>
+        <li><a href="page2.html" class="no-underline">Chinatown's Environment</a> </li>
         <li><a href="page3.html" class="no-underline">Asians in Environmental Justice</a>
 
         </li>
@@ -45,27 +46,19 @@
         <li><a href="donate.html"><img src="Photos/Icons/donate.png" alt=""></a></li>
       </ul>
     </div>
-    <div id="bigimage">
-      <div id="bigimagediv">
-        <h3>Recent News About<br>Environmentalism</h3>
-        <p style="vertical-align: middle;" id="bigimagetext">Learn More About Real World Problems</p><button
-          id="bigimagebutton" onclick="window.location.href='page1.html'">Learn
-          More</button>
-      </div>
-      <div id="count">
-        <p style="vertical-align: middle;">Visits <span id="pagevisits"></span></p>
-      </div>
+  </header>
+  <div id="bigimage">
+    <div id="bigimagediv">
+      <h3 id="bigimageh3">Recent News About<br>Environmentalism</h3>
+      <p style="vertical-align: middle;" id="bigimagetext">Learn More About Real World Problems</p><button
+        id="bigimagebutton" onclick="window.location.href='page1.html'">Learn
+        More</button>
+    </div>
+    <div id="count">
 
     </div>
 
-
-
-
-  </header>
-  <main>
-
-
-  </main>
+  </div>
   <script>
     const pagevisits = document.getElementById("pagevisits");
     updateCounter("type=visit")
@@ -80,9 +73,7 @@
 
 
   </script>
-  <footer>
-    <a class="credentials" href="https://github.com/weeealex2233">Design and Build By Alex Yu 2022 &copy;</a>
-  </footer>
+
   <script src="script.js"></script>
 </body>
 

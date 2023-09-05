@@ -23,14 +23,10 @@ body {
 }
 
 #bigimage {
-    height: 800px;
     text-align: center;
-    margin: 0 auto;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("Photos/marc-schulte-n5qzgURyBEI-unsplash.jpg");
-    background-size: cover;
-    background-position: bottom;
     color: white;
     font-family: 'Roboto', sans-serif;
+
 }
 
 #bigimagediv {
@@ -38,7 +34,7 @@ body {
 }
 
 #bigimagebutton:hover {
-    background-color: #cfcfcf
+    background-color: rgb(197, 255, 197);
 }
 
 #bigimagebutton {
@@ -335,11 +331,9 @@ table p {
     font-family: Helvetica;
     font-size: 24px;
     text-align: center;
-
-
-
-
 }
+
+
 
 p {
     letter-spacing: 0.25px;
@@ -506,11 +500,23 @@ media query
 
 }
 
-@media (min-width:1000px) {
+@media (max-width: 800px) {
+    #bigimageh3 {
+        font-size: 30px;
+        line-height: 1em;
+    }
+
+    #bigimagebutton {
+        width: fit-content;
+    }
+}
+
+@media (min-width:800px) {
     .tablet {
         display: none;
 
     }
+
 
     .desktop {
         display: inline-block;
