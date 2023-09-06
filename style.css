@@ -42,7 +42,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     height: 48px;
-    width: 10%;
+    width: fit-content;
     color: black;
     border-color: black;
     border-radius: 10px;
@@ -52,6 +52,7 @@ body {
 #count p {
     font-size: 18px;
     margin: 42px;
+    line-height: 1.5em;
 }
 
 #bigimagetext {
@@ -506,9 +507,6 @@ media query
         line-height: 1em;
     }
 
-    #bigimagebutton {
-        width: fit-content;
-    }
 }
 
 @media (min-width:800px) {

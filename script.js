@@ -37,8 +37,6 @@ age_allowed(a)*/
 // otherwise alert the end user ("you're too young to enter")
 // using prompt, collect the age to pass as an argument into your function
 
-
-
 function replaceElement() {
     let electric = document.getElementById("electric").value;
     let gas = document.getElementById("gas").value;
