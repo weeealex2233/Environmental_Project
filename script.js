@@ -68,6 +68,8 @@ function replaceElement() {
     }
     newElement.textContent += "\r\nThe Average Person in America has a Carbon Footprint of Around 16 Tons Per Year"
     newElement.textContent += "\r\nHere are Some Ways You can Cut Down on Your Carbon Footprint";
+    newElement.textContent += "\r\n1. Stop buying your water in plastic. Get a reusable water bottle and keep it filled and with you at all times. \r\n2. Incorporate walking or biking to some of your regular short-trip destinations. \r\n3. Turn off lights and unplug devices when you’re not using them. \r\n4. Keep the tires on your car properly inflated and get regular tune-ups. \r\n5. Eat more food that is grown or made locally and less red meat. \r\n6. Use the cold water cycle for washing your clothes. \r\n7. Keep stuff out of the landfill. "
+
     var calculatorform = document.getElementById('calcform');
     calculatorform.replaceWith(newElement);
 
