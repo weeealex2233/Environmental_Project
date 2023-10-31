@@ -54,30 +54,8 @@
         id="bigimagebutton" onclick="window.location.href='page1.html'">Learn
         More</button>
     </div>
-    <div id="count">
-      <p style="vertical-align: middle;" id="visittext">Visits </br><span id="pagevisits"></span></p>
-    </div>
 
   </div>
-  <script>
-    const pagevisits = document.getElementById("pagevisits");
-    incrementVisitCounts();
-    function incrementVisitCounts() {
-      let visits;
-      if (!localStorage.getItem("visits")) {
-        localStorage.setItem("visits", 1);
-      }
-      else {
-        visits = +localStorage.getItem("visits");
-        visits += 1;
-        localStorage.setItem("visits", visits);
-      }
-      pagevisits.innerText = localStorage.getItem("visits");
-
-    }
-  </script>
-
-  <script src="script.js"></script>
 </body>
 
 </html>
